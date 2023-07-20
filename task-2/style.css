@@ -1,0 +1,78 @@
+
+.container{
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 50px 150px 150px 50px;
+    grid-template-areas:
+    "h h h h h h h h h h h h h"
+    "s s s c1 c1 c1 c1 c1 c1 c1 c1 c1 c1"
+    "s s s c2 c2 c2 c2 c2 c3 c3 c3 c3 c3"
+    "f f f f f f f f f f f f f";
+}
+
+  html, body {
+    box-sizing: border-box;
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
+  .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: white;
+  }
+
+  .container > div:nth-child(1n) {
+    background-color: #756dc0;	
+    border: solid black 1px;
+  }
+  
+  .container > div:nth-child(3n) {
+    background-image: linear-gradient(to bottom right, #5244d2, #12c8fa);
+  }
+  
+  .container > div:nth-child(2n) {
+    background-image: linear-gradient(to bottom, #27e3d9, #29a19b);
+  }
+  
+  .container > div:nth-child(4n) {
+    background-image: linear-gradient(to bottom right, #5244d2, #12c8fa);
+  }
+
+  .container > div:nth-child(5n) {
+    background-image: linear-gradient(to bottom right, #5244d2, #12c8fa);
+  }
+
+  .container > div:nth-child(6n) {
+    background-image: linear-gradient(to bottom, #756dc0, #756dc0);	
+  }
+
+.header{
+    grid-area: h;
+}
+
+.sidebar{
+    grid-area: s;
+}
+
+.Content-1{
+    grid-area: c1;
+}    
+
+.Content-2{
+    grid-area: c2;
+}
+
+.Content-3{
+    grid-area: c3;
+}
+
+.footer{
+    grid-area: f;
+}
