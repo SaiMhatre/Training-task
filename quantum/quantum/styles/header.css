@@ -1,0 +1,357 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 58px;
+    background-color: #25313F;
+    background-image: url('../assets/header pattern image.png');
+    background-blend-mode: overlay;
+    padding: 0px 1.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #3AC7EC;
+    gap: 2rem;
+}
+
+.header-links, .header-actions {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    height: 58px;
+    gap: 2rem;
+}
+.header-links > li, .header-actions > li {
+    display: flex;
+    align-items: center;
+}
+.header-links a {
+    text-decoration: none;
+    color: #3FD28B;
+    font-weight: 600;
+}
+.header-link-selected {
+    border-bottom: 4px solid #FFFFFF;
+}
+.header-link-selected a {
+    color: white;
+}
+.header-actions {
+    display: flex;
+    flex: initial;
+    padding-top: 0.5rem;
+}
+.header-actions-avatar img {
+    width: 30px;
+}
+
+.header-actions li {
+    position: relative;
+}
+.header-actions-overlay {
+    position: absolute;
+    color: white;
+    background-color: #2A7FF3;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    font-size: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0.45rem;
+    right: -0.5rem;
+    font-weight: 600;
+}
+.header-actions-avatar img {
+    height: 32px;
+    width: 32px;
+    border: 2px solid #3FD28B;
+    border-radius: 50%;
+}
+.header-actions-avatar .header-actions-overlay {
+    background-color: white;
+    color: black;
+}
+.header-dropdown {
+    display: none;
+}
+
+/* announcement-dropdown */
+
+.announcement{
+    transform: scale(0);
+    transform-origin:top;
+    position: absolute;
+    display: flex;
+    top: 51px;
+    flex-direction: column;
+    z-index: 1;
+    background-color: white;
+    width: 18rem;
+    right: 0rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 500ms;
+}
+
+.announcement-dropdown .PA{
+    display: flex;
+    width: auto;
+}
+
+.small-grey{
+    color: #8c8a8a;  
+}
+
+.name{
+    margin-left: 0.4em;
+}
+
+.announcement-dropdown{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 18rem;
+    right: 5rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    height: 27rem;
+    overflow: auto;
+}
+
+.announcement-class{
+    padding: 1.4em;
+    padding-right: 1.4em;
+    position: relative;
+    border-bottom: 0.1rem solid #d8d8d8;
+}
+
+.announcement-content{
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding-top: 0.5em;
+}
+
+.attachment-line{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.7em;
+}
+
+.attachment-line img{
+    height: 9px;
+    width: 7px;
+}
+
+.checked{
+    position: absolute;
+    z-index: 100;
+    top: 0.7rem;
+    right: 0.5rem;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.bg{
+    background-color: rgb(241, 242, 227);
+}
+
+.delete{
+    position: absolute;
+    z-index: 2;
+    top: 0.7rem;
+    right: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.display-end{
+    justify-content: end;
+}
+
+#announcement-links{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#announcement-links > a{
+    z-index: 2;
+    text-decoration: none;
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
+    color: #3c9069;
+    font-size: 1.3em;
+    width: 100%;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+.announcement-icon:hover .announcement{
+    transform: scale(1);
+    transition: all 50ms;
+    right: 0rem;
+}
+
+.announcement-icon1:hover .announcement1{
+    transform: scale(1);
+    transition: all 50ms;
+    right: 0rem;
+}
+
+#left{
+    border-left: 0.1rem solid grey;
+}
+
+.remove-top-padding{
+    padding-top: 0;
+}
+
+/* notification dropdown */
+
+.announcement1{
+    transform: scale(0);
+    transform-origin:top;
+    position: absolute;
+    display: flex;
+    top: 51px;
+    flex-direction: column;
+    z-index: 1;
+    background-color: white;
+    width: 18rem;
+    right: 0rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.spacing{
+    margin-right: 2.6em;
+}
+
+   /* width */
+   ::-webkit-scrollbar {
+    width: 3px;
+ }
+/* Track */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #bbbaba;
+}
+
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+@media (max-width: 828px) {
+    .header > .header-links {
+        display: none;
+    }
+
+    #submenu a {
+        text-decoration: none;
+        color: #3c9069;
+        font-weight: 600;
+    }
+
+    .hamburger-label:hover{
+        background-color: rgb(226, 226, 226);
+    }
+    
+    .header-actions {
+        margin-left: auto;
+    }
+    .header-dropdown {
+        width: 38px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+    }
+    .header-dropdown img {
+        height: 35px;
+    }
+    .header-dropdown:hover ul#submenu {
+        top: 58px;
+        transition: all 500ms;
+    }
+    #submenu {
+        position: absolute;
+        display: flex;
+        top: -500px;
+        right: 1em;
+        background-color: #ffffff;
+        flex: initial;
+        flex-direction: column;
+        height: auto;
+        width:18em;
+        z-index: 1;
+        align-items: flex-start;
+        background-image: url('../assets/header pattern image.png');
+        background-blend-mode: overlay;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .hamburger-label{
+        padding: 1em 0em 1em 1em;
+        width: 100%;
+    }
+
+    .hamburger-label img{
+        width: 0.8em;
+        height: 0.8em;
+        margin-top: 0.26em;
+    }
+
+    .hamburger-links{
+        font-weight: 1200;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content:space-between;
+        margin-right: 1.5em;
+        position: relative;
+    }
+    
+    #inside-hamburger-label {
+        display:none;
+    }
+
+    #unique:hover #inside-hamburger-label{
+        font-weight: 1200;
+        font-size: 0.8rem;
+        display: flex;
+        padding-top: 2em;
+        width: 100%;
+        margin-left: 1em;
+    }
+
+    #unique:hover .up-arrow{
+        display: flex;
+    }
+
+    #unique:hover .down-arrow{
+        display: none;
+    }
+
+    .dowm-arrow {
+        display: block;
+    } 
+
+    .up-arrow{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 19em;
+        z-index: 99;
+    }
+
+    /* announment-dropdown */
+
+    /* notification dropdown */
+
+}

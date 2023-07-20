@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quantum - Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/header.css'>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/icons/logo used in header.svg" alt="Logo"/>
+    </header>
+    <div class="login-wrapper">
+        <form class="login">
+            <div class="login-header">
+                <a href="#" class="login-header-back">
+                    <img src="assets/icons/back.svg" alt="Back"/>
+                </a>
+                <h2 class="login-header-title">Log in with Quantum</h2>
+            </div>
+            <div class="login-fields">
+                <div class="login-field login-field-radio">
+                    <div class="login-field-radio-item">
+                        <img src="assets/icons/radio-button-on.svg" alt="Radio Button On"/>
+                        <p>District</p>
+                    </div>
+                    <div class="login-field-radio-item">
+                        <img src="assets/icons/radio-button-off.svg" alt="Radio Button Off"/>
+                        <p>Independent School</p>
+                    </div>
+                </div>
+                <div class="login-field login-field-select">
+                    <label>State*</label>
+                    <select>
+                        <option>Alabama</option>
+                    </select>
+                </div>
+                <div class="login-field login-field-select">
+                    <label>District*</label>
+                    <select>
+                        <option selected>Alabama School District</option>
+                    </select>
+                </div>
+                <div class="login-field login-field-text">
+                    <input type="text" placeholder="Username/Email ID*"/>
+                    <a href="#">FORGOT USERNAME?</a>
+                </div>
+                <div class="login-field login-field-text">
+                    <input type="text" placeholder="Password*"/>
+                    <a href="#">FORGOT PASSWORD?</a>
+                    <img src="assets/icons/preview.svg" alt="Show Password" class="login-field-overlay-icon"/>
+                </div>
+                <div class="login-field login-field-radio">
+                    <div class="login-field-radio-item">
+                        <img src="assets/icons/checkbox-checked.svg" alt="Checkbox Checked"/>
+                        <p>Remember Me</p>
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="LOG IN" class="login-button"/>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <ul class="footer-top-links">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <img src="assets/icons/logo used in footer.svg" alt="Logo"/>
+            <p>
+                <span>Copyright © 2020-2021</span>
+                <b>Zeus Systems Pvt. Ltd.</b>
+                <span>All rights reserved.</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
